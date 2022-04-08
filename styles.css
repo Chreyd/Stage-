@@ -1,12 +1,14 @@
 body{
-    /* background-color: #c5c5c5; */
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font: 0.76rem Arial, Helvetica, sans-serif;
 }
 .header{
     margin: 0px ;
     padding: 0px;
+    box-sizing: border-box;
+    width: 90%;
 }
 .menu{
     height: 2rem;
@@ -37,10 +39,6 @@ body{
     font-weight: bold;
     
 }
-/* .menu li a:active {
-    color: #fff;
-
-} */
 .menu .sousmenu{
     list-style-type: none;
     display: none;
@@ -92,14 +90,28 @@ body{
 }
 /* -------------------------------------------------- */
 
-main{
-    padding-top: 0px;
-    margin-top: 0px;
+
+
+.content1{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+.content1 img{
+    width: max-content;
+    position: absolute;
+    object-fit: cover;
+    left: 0;
+}
+.content2{
 
 }
-.content{
-    background-image: url(assets/télécharger.jpg);
-    background-size: 100% 30rem  ;
+.content3{
+
 }
 .leftContent{
     background-repeat: no-repeat;
@@ -111,36 +123,60 @@ main{
     text-align: right;
     font-weight: bold;
 }
-form{
-    font-size: 0.76rem;
-    text-align: left;
-    color: rgb(98, 100, 102);
-    background-color: #fff;
-    height: 35rem;
-    border-radius: 7px;
-    font-size: 1rem;
-    padding-left: 50px;
-    padding-top: 10px;
-    display: flex;
-    flex-direction: column;
-
-}
 .bgBlack{
     background-color: black;
 }
+
+/* -----------------------------------------slider---------------------------- */
+.slider{
+    height:88vh;
+    position: relative;
+}
+.slider img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.slider img.active{
+    opacity: 1;
+}
+.suivant, .precedent{
+    color: #fff;
+    font-size: 3rem;
+    position: absolute;
+    top: 90%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.suivant{
+    right: 1rem;
+}
+.precedent{
+    left: 1rem;
+}
+
+
+/* ------------------------------------------------------------- */
+
 .info1{
     padding: 10px 30px 10px;
     text-align: center;
-    margin: auto;
+    margin:  80px auto 0 auto;
     font-size: 12pt;
     font-family: Arial;
-    color: #757575
+    color: #4F4F4F;
 }
-.info1 h2{
+h2{
     font-family: "Poppins", sans-serif;
     margin-top: 30px;
     text-align: center;
-    color: black;
+    color: #4F4F4F;
+    font-size: 1.8rem;
 }
 a{
     text-decoration: none;
@@ -160,5 +196,40 @@ a{
     margin: auto;
     font-size: 12pt;
     font-family: Arial;
-    color: #757575
+    color: #4F4F4F;
 }
+
+/* ---------------------------------------------- */
+
+.presentationServices{
+    width:85%;
+    margin: 0 auto;
+}
+
+
+.nosService{
+    display: flex;
+    width:100%;
+    margin: 0 auto;
+    color: #4F4F4F;
+
+}
+.nosService img{
+    box-shadow: 0px 7px 22px 5px rgba(0,0,0,0.2);
+    height: 15rem;
+    border-radius: 1rem;
+    transition:ease-in-out 0.4s;
+}
+.nosService img:hover{
+    opacity: 0.9;
+}
+.service{
+    margin: 1rem 1rem 0rem 1rem; 
+}
+.service h3{
+    line-height: 1.2rem;
+    font-size: 1.275rem ;
+    color: #4F4F4F;
+    word-spacing: 2rem;
+}
+
