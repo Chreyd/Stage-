@@ -131,7 +131,7 @@ body{
 .slider{
     height:88vh;
     position: relative;
-}
+} 
 .slider img{
     object-fit: cover;
     height: 100%;
