@@ -4,6 +4,65 @@ body{
     box-sizing: border-box;
     font: 0.76rem Arial, Helvetica, sans-serif;
 }
+header .headerContainer{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color: #7D9AEF;
+    display: flex;
+    flex: 1;
+}
+header .headerContainer .headerLeft{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex: 8;
+}
+header .headerContainer .headerLeft .spanHead{
+    font-size: 1rem;
+}
+header .headerContainer .headerLeft ul{
+    margin: 0.3rem;
+    padding: 0;
+    display: flex;
+    padding-left:10rem;
+    
+}
+header .headerContainer .headerLeft ul li{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    padding-right: 1rem;
+    font-size: 0.9rem;
+}
+
+
+
+header .headerContainer .headerRight{
+    margin: 0;
+    padding: 0;
+    padding-right: 1rem;
+    display: flex;
+    flex: 1;
+}
+header .headerContainer .headerRight ul{
+    margin: 0.3rem;
+    padding: 0;
+    display: flex;
+    justify-content:space-between;
+}
+header .headerContainer .headerRight ul li{
+    font-size: 1.05rem;
+    list-style-type: none;
+    padding-left: 1.2rem;
+}
+header .headerContainer .headerRight ul li a, header .headerContainer .headerLeft ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* ---------------------------------------------------- */
 .header{
     margin: 0px ;
     padding: 0px;
@@ -11,9 +70,9 @@ body{
     width: 90%;
 }
 .menu{
-    height: 2rem;
+    height: 3rem;
     list-style: none;
-    padding: 10px;
+    padding: 1.9rem;
     margin-left: 80px;
     width: 100%;
 
@@ -107,12 +166,12 @@ body{
     object-fit: cover;
     left: 0;
 }
-.content2{
+/* .content2{
 
 }
 .content3{
 
-}
+} */
 .leftContent{
     background-repeat: no-repeat;
     width: 40%;
@@ -131,7 +190,8 @@ body{
 .slider{
     height:88vh;
     position: relative;
-} 
+}
+
 .slider img{
     object-fit: cover;
     height: 100%;
@@ -140,7 +200,7 @@ body{
     top: 0;
     left: 0;
     opacity: 0;
-    transition: opacity 0.5s;
+    transition: opacity 0.7s;
 }
 .slider img.active{
     opacity: 1;
@@ -152,6 +212,7 @@ body{
     top: 90%;
     transform: translateY(-50%);
     cursor: pointer;
+    display: none;
 }
 .suivant{
     right: 1rem;
@@ -216,7 +277,7 @@ a{
 }
 .nosService img{
     box-shadow: 0px 7px 22px 5px rgba(0,0,0,0.2);
-    height: 15rem;
+    height: 160px;
     border-radius: 1rem;
     transition:ease-in-out 0.4s;
 }
@@ -230,6 +291,120 @@ a{
     line-height: 1.2rem;
     font-size: 1.275rem ;
     color: #4F4F4F;
-    word-spacing: 2rem;
 }
 
+/* ------------------------footer-------------------- */
+
+footer{
+    /* height: 30rem; */
+    background-color: #2F2F2F;
+    color: white;
+    list-style-type: decimal;
+    padding-top: 3.5rem;
+    padding-left: 4rem;
+    padding-right:4rem;
+    color: #d5d5d5;
+    font-size: 0.85rem;
+    line-height: 1.4rem;
+    padding-bottom: 3.5rem;
+
+}
+footer .footerContent{
+    display: flex;
+}
+.leftFooter{
+    line-height: 2.5rem;
+    padding-right: 2rem;
+    flex:1;
+}
+.leftFooter h4{
+    padding-top:0;
+    margin-top: 0.7rem;
+}
+.leftFooter,.middleFooter,.rightFooter{
+    color: #ffffff;
+}
+.middleFooter{
+    padding-right: 2rem;
+    flex: 1;
+}
+.middleFooter ul{
+    line-height: 2rem;
+}
+
+.rightFooter{
+    flex: 1;
+}
+.rightFooter a{
+    text-decoration: none;
+    color: #fff; 
+}
+.rightFooter p{
+    padding-top: 1.1rem;
+    font-weight: normal;
+}
+
+footer h4{
+    color: #103EFB;
+    text-decoration:underline;
+    font-size: 1rem;
+}
+footer ul{
+    padding: 1rem
+}
+footer li a{
+    text-decoration: none;
+    color: #fff; 
+}
+
+footer hr{
+    padding:0;
+    margin:0;
+    border:none;
+    height: 0.3rem;
+    background-color: #484848;
+    margin-bottom: 2rem;
+}
+.borderBottom .about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer small{
+    font-size: 0.75rem;
+    align-items: center;
+    color: #fff;
+}
+footer small a{
+    text-decoration: none;
+    color: #d5d5d5;
+}
+.borderBottom .about .right ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.borderBottom .about .right ul li{
+    list-style-type: none;
+    padding-right: 2rem;
+}
+
+/* footer small {
+    margin-bottom: 2rem;
+    font-size: 0.75rem;
+    align-items: center;
+    color: #8B8C8D;
+    display: inline-block;
+}
+
+
+footer .right ul{
+}
+footer .right ul li{
+    float: right;
+    list-style-type: none;
+    padding-left: 2rem;
+} */
