@@ -391,20 +391,78 @@ footer small a{
     list-style-type: none;
     padding-right: 2rem;
 }
+/* *****************PARIE DES SERVICE************************* */
 
-/* footer small {
-    margin-bottom: 2rem;
-    font-size: 0.75rem;
-    align-items: center;
-    color: #8B8C8D;
-    display: inline-block;
+.mainService{
+    max-width: 90%;
+    margin: auto;
+    font-size: 0.9rem;
+    color: #4F4F4F;
 }
-
-
-footer .right ul{
+.mainService h3{
+    font-size: 1.5rem;
+    padding-bottom:0;
+    margin-bottom: 0
 }
-footer .right ul li{
-    float: right;
-    list-style-type: none;
-    padding-left: 2rem;
-} */
+.mainServiceHeader{
+    display: flex;
+    flex: 1;
+    justify-content:center;
+}
+.mainServiceHeader .mainServiceHeaderLeft{ 
+    flex: 7;
+    margin-right: 2rem;
+}
+.mainService h2{
+    padding-top: 0 ;
+    margin-top: 0;
+}
+.mainServiceHeader .mainServiceHeaderRight{ 
+    flex: 7;
+}
+.mainServiceHeader .mainServiceHeaderRight h4{
+    padding-top: 0.5rem ;
+    margin: 0;
+}
+.mainServiceHeader .mainServiceHeaderLeft img{ 
+    width: 100%;
+}
+/* ******************************************** */
+.mainServiceHeaderMiddleContentText{
+    text-align:justify;
+}
+.mainServiceHeaderMiddleContentText h3{
+    text-align: center;
+    padding-top:2rem;
+    
+}
+.mainServiceHeaderMiddleContentText p, .mainServiceHeaderMiddleContentText ul li{
+    padding:0;
+    margin: 0;
+    line-height:1.5rem;
+}
+.mainServiceHeaderMiddleContentText .list{
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.mainServiceHeaderMiddleContentImage{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom:4rem;
+    margin-top:2rem;
+}
+.mainServiceHeaderMiddleContentImage img{
+    width:23rem;
+    border-radius: 1rem;
+    box-shadow: 0px 7px 22px 5px rgba(0,0,0,0.2);
+}
+.liensServices p{
+    text-align:center;
+    line-height:1.5rem;
+    padding-bottom: 4rem;
+}
+.liensServices a{
+    text-decoration:underline;
+    color: #4F6FCE;
+}
