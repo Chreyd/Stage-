@@ -3,6 +3,7 @@ body{
     padding: 0;
     box-sizing: border-box;
     font: 0.76rem Arial, Helvetica, sans-serif;
+    max-width: 100%;
 }
 header .headerContainer{
     margin: 0;
@@ -73,9 +74,14 @@ header .headerContainer .headerRight ul li a, header .headerContainer .headerLef
     height: 3rem;
     list-style: none;
     padding: 1.9rem;
-    margin-left: 80px;
-    width: 85%;
-
+    margin-left: 0px;
+    margin-right: 0;
+    width: 100%;
+    margin: auto;
+    padding-left: 0;
+}
+.menu .faMenu{
+    display: none;
 }
 .menu li{
     float: left;
@@ -147,7 +153,8 @@ header .headerContainer .headerRight ul li a, header .headerContainer .headerLef
 
 .logo{
     float: left;
-    padding-right: 150px;
+    padding-right: 5rem;
+    padding-left: 2rem;
     font-weight: bold;
     color: black;
 
@@ -180,12 +187,6 @@ header .headerContainer .headerRight ul li a, header .headerContainer .headerLef
     z-index: 1;
 
 }
-/* .content2{
-
-}
-.content3{
-
-} */
 .leftContent{
     background-repeat: no-repeat;
     width: 40%;
@@ -261,7 +262,7 @@ a{
     margin-top: 30px;
 }
 .imageDescription img{
-    height:400px;
+    height:20rem;
     margin-left: 60px;
     border-radius: 20px;
 }
@@ -282,30 +283,44 @@ a{
 }
 
 
+.service{
+    margin: 1rem 1rem 0rem 1rem; 
+}
+
+.allService{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1;
+}
 .nosService{
     display: flex;
-    width:100%;
-    margin: 0 auto;
-    color: #4F4F4F;
-
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    flex-wrap: wrap;
 }
+.service{
+    flex: 1;
+}
+
 .nosService img{
     box-shadow: 0px 7px 22px 5px rgba(0,0,0,0.2);
-    height: 160px;
+    height: 100%;
     border-radius: 1rem;
     transition:ease-in-out 0.4s;
+    width: 100%;
 }
 .nosService img:hover{
     opacity: 0.9;
 }
-.service{
-    margin: 1rem 1rem 0rem 1rem; 
-}
-.service h3{
-    line-height: 1.2rem;
-    font-size: 1.275rem ;
-    color: #4F4F4F;
-}
+
+
+
+
 /* *******************NOS CLIENTS**************** */
 .nosClients{
     max-width: 90%;
@@ -584,4 +599,72 @@ footer small a{
 .liensServices a{
     text-decoration:underline;
     color: #4F6FCE;
+}
+
+/* ********************************* RESPONSIVE********************* */
+
+@media only screen and (max-width: 1200px){
+    .imageDescription{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media only screen and (max-width: 800px){
+    .nosService{
+        display: flex;
+        flex-direction: column;
+    }
+    .footerContent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .counterContact .contact{
+        font-size: 1rem;
+    }
+    .nosClients .clients{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .nosClients .clients .itemclients{
+        margin-top: 1rem;
+        padding-top: 1rem;
+    }
+    .presentation .info1 {
+        font-size: 0.8rem;
+    }
+    .presentation .info1 h2{
+        font-size: 1.2rem;
+    }
+    .counterContact .counter div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mainServiceHeader{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu{
+        height: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .menu li{
+        display: none;
+    }
+    .menu .faMenu{
+        display: flex;
+        /* justify-content: flex-end; */
+    }
+    .faMenu{
+        margin-right: 2rem;
+        font-size: 1rem;
+    }
+
 }
