@@ -67,28 +67,29 @@ header .headerContainer .headerRight ul li a, header .headerContainer .headerLef
     margin: 0px ;
     padding: 0px;
     box-sizing: border-box;
-    width: 90%;
+    width: 100%;
 }
 .menu{
     height: 3rem;
     list-style: none;
     padding: 1.9rem;
     margin-left: 80px;
-    width: 100%;
+    width: 85%;
 
 }
 .menu li{
     float: left;
     width:fit-content;
-    padding-right: 20px;
     text-align: center;
+    padding-right: 1.4rem;
 }
 .menu li a{
     color: #0088CC;
 }
 .menu li a:hover{
     color: #fff;
-    background-color: #0088CC
+    background-color: #0088CC;
+
 }
 .menu li a:link, .menu li a:visited{
     display: block;
@@ -96,9 +97,9 @@ header .headerContainer .headerRight ul li a, header .headerContainer .headerLef
     text-align: center;
     text-decoration: none;
     font-weight: bold;
-    
 }
 .menu .sousmenu{
+    border-top: 1px solid 0088CC;
     list-style-type: none;
     display: none;
     padding: 0;
@@ -106,34 +107,44 @@ header .headerContainer .headerRight ul li a, header .headerContainer .headerLef
     position: absolute;
     height:max-content;
     background-color: rgb(255, 255, 255);
+    z-index: 2;
+    width: 15rem;
+    opacity: 0.95;
+    border-top: #0088CC;
+
 }
 .menu .sousmenu li{
+    line-height: 1.5rem;
     float: none;
     margin: 0;
     padding: 0;
     border-top: 1px solid transparent;
     border-right: 1px solid transparent;
+    border-top: #0088CC;
+
 
 }
 .menu .sousmenu li a{
-    color: rgb(143, 132, 132);
+    color: #0088CC;
     font-weight: normal;
-    padding-left: 20px ;
+    padding-left: 1rem ;
+    width: 14rem;
+    text-align: left;
+    font-size: 0.9rem;
 }
 .menu .sousmenu li a:hover{
-    background-color: rgb(235, 235, 235);
+    background-color: #0088CC;
+    color: #fff;
 }
 .menu .sousmenu li a:link, .menu li a:visited{
     display: block;
     text-decoration: none;
 }
-.menu .sousmenu li a:hover {
-    color: rgb(145, 148, 151);
-    
-}
+ 
 .menu li:hover .sousmenu{
     display: block;
 }
+
 .logo{
     float: left;
     padding-right: 150px;
@@ -159,12 +170,15 @@ header .headerContainer .headerRight ul li a, header .headerContainer .headerLef
     box-sizing: border-box;
     width: 100%;
     height: 100%;
+    z-index: 1;
 }
 .content1 img{
     width: max-content;
     position: absolute;
     object-fit: cover;
     left: 0;
+    z-index: 1;
+
 }
 /* .content2{
 
@@ -188,7 +202,7 @@ header .headerContainer .headerRight ul li a, header .headerContainer .headerLef
 
 /* -----------------------------------------slider---------------------------- */
 .slider{
-    height:88vh;
+    height:70vh;
     position: relative;
 }
 
@@ -291,6 +305,108 @@ a{
     line-height: 1.2rem;
     font-size: 1.275rem ;
     color: #4F4F4F;
+}
+/* *******************NOS CLIENTS**************** */
+.nosClients{
+    max-width: 90%;
+    margin: 3rem auto 5rem auto;
+}
+.nosClients h3{
+    text-align: center;
+    font-size: 2.5rem;
+    color: #4F4F4F;
+
+}
+.nosClients .clients{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    margin: 2rem auto;
+    font-size: 1.4rem;
+    text-align: center;
+}
+.nosClients .clients .itemclients{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+    flex:1;
+    height: 13rem;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+    border-radius: 5px;
+    color: #4F4F4F;
+
+}
+.nosClients .clients .itemclients i{
+    margin-bottom: 1.5rem;
+    font-size: 4rem;
+    background-image: linear-gradient(to top left, #4f6fce, lightblue);
+    color: white;
+    border-radius: 5px;
+    
+}
+/* ******************CONTACT ET COUNTER*************** */
+.counterContact .counter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.4rem;
+    color: #4F4F4F;
+    background-color: #314490;
+    width: 100% ;
+    color: white;
+    padding-bottom: 3rem;
+    flex-wrap: wrap;
+
+
+}
+.counterContact .counter div{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.counterContact .counter div .data{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+
+
+.counterContact .contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.7rem;
+    color: #4F4F4F;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: rgb(211, 209, 209);
+    line-height: 1rem;
+
+}
+.counterContact .contact .number{
+    font-size: 2.5rem;
+
+}
+.counterContact .contact a{
+    text-decoration: none;
+    background-color: blue;
+    color: #fff; 
+    padding: 0.7rem 2rem;
+    border-radius: 5px;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+    transition: ease-in-out 0.5s; 
+    
+
+}
+.counterContact .contact a:hover{
+    background-color: rgb(0, 0, 0);
 }
 
 /* ------------------------footer-------------------- */
@@ -451,8 +567,11 @@ footer small a{
     justify-content: space-around;
     margin-bottom:4rem;
     margin-top:2rem;
+    flex-wrap: wrap;
+    align-items: space-around;
 }
 .mainServiceHeaderMiddleContentImage img{
+    margin-top:1rem;
     width:23rem;
     border-radius: 1rem;
     box-shadow: 0px 7px 22px 5px rgba(0,0,0,0.2);
