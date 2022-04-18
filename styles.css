@@ -12,22 +12,25 @@ header .headerContainer{
     background-color: #7D9AEF;
     display: flex;
     flex: 1;
+    flex-wrap: wrap;
 }
 header .headerContainer .headerLeft{
     margin: 0;
     padding: 0;
     display: flex;
     flex: 8;
+    flex-wrap: wrap;
 }
 header .headerContainer .headerLeft .spanHead{
     font-size: 1rem;
 }
 header .headerContainer .headerLeft ul{
-    margin: 0.3rem;
+    margin: 0px 0px 0px 0px;
     padding: 0;
     display: flex;
-    padding-left:10rem;
-    
+    padding-left:5rem;
+    flex-wrap: wrap;
+
 }
 header .headerContainer .headerLeft ul li{
     margin: 0;
@@ -35,6 +38,10 @@ header .headerContainer .headerLeft ul li{
     list-style-type: none;
     padding-right: 1rem;
     font-size: 0.9rem;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 2rem;
+
 }
 
 
@@ -45,6 +52,8 @@ header .headerContainer .headerRight{
     padding-right: 1rem;
     display: flex;
     flex: 1;
+    flex-wrap: wrap;
+
 }
 header .headerContainer .headerRight ul{
     margin: 0.3rem;
@@ -74,13 +83,16 @@ header .headerContainer .headerRight ul li a, header .headerContainer .headerLef
     height: 3rem;
     list-style: none;
     padding: 1.9rem;
-    margin-left: 0px;
-    margin-right: 0;
+
     width: 100%;
     margin: auto;
     padding-left: 0;
 }
-.menu .faMenu{
+ul.menu{
+    margin: 0px 0px 0px 0px;
+    padding: 1rem 0rem 1rem 0rem
+}
+.menu2{
     display: none;
 }
 .menu li{
@@ -262,11 +274,13 @@ a{
     margin-top: 30px;
 }
 .imageDescription img{
+    max-width: 100%;
+    flex: 1;
     height:20rem;
-    margin-left: 60px;
     border-radius: 20px;
 }
 .imageDescription .description{
+    flex: 1;
     padding: 10px 30px 10px;
     text-align: justify;
     margin: auto;
@@ -573,6 +587,7 @@ footer small a{
     line-height:1.5rem;
 }
 .mainServiceHeaderMiddleContentText .list{
+    flex-wrap: wrap;
     padding-top: 1rem;
     display: flex;
     justify-content: space-between;
@@ -610,6 +625,12 @@ footer small a{
         justify-content: center;
         align-items: center;
     }
+}
+@media only screen and (max-width: 1080px){
+    .menu{
+        display: none
+    }
+  
 }
 @media only screen and (max-width: 800px){
     .nosService{
@@ -649,22 +670,15 @@ footer small a{
         display: flex;
         flex-direction: column;
     }
-    .menu{
-        height: 1rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .menu li{
-        display: none;
-    }
-    .menu .faMenu{
-        display: flex;
-        /* justify-content: flex-end; */
-    }
-    .faMenu{
-        margin-right: 2rem;
-        font-size: 1rem;
+
+    @media only screen and (max-width: 510px){
+        header .headerContainer .headerLeft ul{
+            margin: 0px 0px 0px 0px;
+            padding-left: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+        
+        }
     }
 
 }

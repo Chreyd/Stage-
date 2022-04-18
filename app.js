@@ -56,7 +56,7 @@ $(window).scroll(function() {
 
         {
 
-          duration: 2000,
+          duration: 5000,
           easing: 'swing',
           step: function() {
             $this.text(Math.floor(this.countNum));
@@ -72,3 +72,21 @@ $(window).scroll(function() {
   }
 
 });
+
+/* ************************* MENU DEROULANT ************************ */
+
+
+/* let faMenu = document.querySelector('#faMenu');
+let nav = document.querySelector('.nav');
+
+nav.style.display='none';
+
+faMenu.addEventListener('click', function() {
+    if(nav.style.display=='flex'){
+        nav.style.display='none';
+    }else{
+        nav.style.display='flex';
+
+    };
+}); */
+
