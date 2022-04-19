@@ -79,18 +79,24 @@ header .headerContainer .headerRight ul li a, header .headerContainer .headerLef
     box-sizing: border-box;
     width: 100%;
 }
+.header2{
+    display: none;
+}
+.liSecondaire{
+    display: none;
+}
 .menu{
-    height: 3rem;
+    height: 4.5rem;
     list-style: none;
-    padding: 1.9rem;
+    /* padding: 1.9rem; */
 
     width: 100%;
-    margin: auto;
+    margin: auto auto;
     padding-left: 0;
 }
 ul.menu{
     margin: 0px 0px 0px 0px;
-    padding: 1rem 0rem 1rem 0rem
+    padding: 2.5rem 0rem 1rem 0rem;
 }
 .menu2{
     display: none;
@@ -99,7 +105,7 @@ ul.menu{
     float: left;
     width:fit-content;
     text-align: center;
-    padding-right: 1.4rem;
+    padding-right: 1rem;
 }
 .menu li a{
     color: #0088CC;
@@ -162,14 +168,31 @@ ul.menu{
 .menu li:hover .sousmenu{
     display: block;
 }
+#devis{
+    margin-top: 0rem;
+    background-color: #0088CC;
+    transition: ease-in-out 0.1s;
+}
+#devis a{
+    color: #fff;
+    padding-left: 0.6rem;
+    transition: ease-in-out 0.1s;
+}
+#devis:hover, #devis a:hover {
+    background-color: black;
+}
 
 .logo{
     float: left;
-    padding-right: 5rem;
-    padding-left: 2rem;
+    padding-right: 3rem;
+    padding-left: 1.5rem;
     font-weight: bold;
-    color: black;
+    font-size: 1rem;
+    cursor: pointer;
 
+}
+.logo a{
+    color: black;
 }
 .bigBlu{
     background-color: #1136FF;
@@ -253,7 +276,7 @@ ul.menu{
 
 .info1{
     padding: 10px 30px 10px;
-    text-align: center;
+    text-align:justify;
     margin:  80px auto 0 auto;
     font-size: 12pt;
     font-family: Arial;
@@ -299,6 +322,7 @@ a{
 
 .service{
     margin: 1rem 1rem 0rem 1rem; 
+    flex: 1;
 }
 
 .allService{
@@ -316,9 +340,6 @@ a{
     align-items: center;
     flex: 1;
     flex-wrap: wrap;
-}
-.service{
-    flex: 1;
 }
 
 .nosService img{
@@ -403,6 +424,9 @@ a{
     display: flex;
     flex-direction: column;
     flex: 1;
+}
+.counterContact .counter div .data span{
+    font-size: 2.3rem;
 }
 
 
@@ -627,24 +651,96 @@ footer small a{
     }
 }
 @media only screen and (max-width: 1080px){
-    .menu{
+    .menu .liPrincipal{
         display: none
+    }
+    .liSecondaire{
+        display: inline;
+        position: absolute;
+        left: 95%;
+        color: black;
+        font-weight: bolder;
+    }
+    .header2 .nav .navbar #devis{
+        width: 100%;
+    }
+    .header2 .nav .navbar .liPrincipal{
+        max-width: fit-content;
+    }
+    .header2{
+        /* display: none; */
+        margin-bottom: 1rem;
+    }
+    .header2 .nav .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+    .header2 .nav .navbar li{
+        list-style-type: none;
+        line-height: 1.5rem;
+    }
+    .header2 .nav .navbar li a{
+        color: #0f009b;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .header2 .nav .navbar .liPrincipal:hover .sousmenu{
+        display: block;
+    }
+    .header2 .nav .navbar .sousmenu{
+        display: none;
+        position: absolute;
+        z-index: 2;
+        float: inline-start;
+        background-color: #0088CC;
+        border-radius: 0.5rem;
+        padding: 0px 0px 0px 0px;
+        width: 15rem;
+        
+    }
+    .header2 .nav .navbar .sousmenu li{
+        padding-left: 1rem;
+    }
+    .header2 .nav .navbar .sousmenu li a{
+        font-weight: 100;
+    }
+    .header2 .nav .navbar .sousmenu li:hover{
+        background-color: #d5d5d5;
     }
   
 }
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 860px){
     .nosService{
         display: flex;
         flex-direction: column;
     }
+
+    .header2 .nav .navbar .sousmenu li{
+        line-height: 1.2rem;
+        margin-top: 0.3rem;
+    }
+    /* .header2 .nav .navbar .sousmenu li a{
+        line-height: normal;
+        font-size: 0.7rem;
+    } */
     .footerContent{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+    .middleFooter, .rightFooter{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
     .counterContact .contact{
         font-size: 1rem;
+    }
+    .counterContact .contact .number{
+        font-size: 2rem;
     }
     .nosClients .clients{
         display: flex;
@@ -679,6 +775,7 @@ footer small a{
             flex-wrap: wrap;
         
         }
+
     }
 
 }

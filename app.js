@@ -1,3 +1,9 @@
+/* ****************************SLIDER*******************************/
+// let logo = document.querySelector('.logo')
+
+// logo.addEventListener('click', (e)=>{
+//   e.location.href="http://www.google.fr"
+// } )
 let img_slider= document.getElementsByClassName('image_slider');
 
 let step= 0;
@@ -11,7 +17,8 @@ function removeActiveImage() {
     }
 }
 
-next.addEventListener('click',function(){
+/*
+ next.addEventListener('click',function(){
     step++;
     if (step>= img_slider.length) {
         step = 0;
@@ -28,6 +35,8 @@ prev.addEventListener('click',function(){
     removeActiveImage();
     img_slider[step].classList.add('active');
 })
+
+*/
 
 setInterval(function() {
     step++;
@@ -76,8 +85,8 @@ $(window).scroll(function() {
 /* ************************* MENU DEROULANT ************************ */
 
 
-/* let faMenu = document.querySelector('#faMenu');
-let nav = document.querySelector('.nav');
+let faMenu = document.querySelector('#faMenu');
+let nav = document.querySelector('.header2');
 
 nav.style.display='none';
 
@@ -88,5 +97,6 @@ faMenu.addEventListener('click', function() {
         nav.style.display='flex';
 
     };
-}); */
+}); 
+
 
